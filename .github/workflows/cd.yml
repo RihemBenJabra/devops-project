@@ -7,7 +7,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: self-hosted  # Assure-toi d'avoir un runner auto-hébergé configuré en local ou sur une machine Linux.
+    runs-on: self-hosted  # Assure-toi d'avoir un runner auto-hébergé configuré en local ou sur une machine Linux ou Windows.
     
     steps:
     - name: Checkout code
@@ -21,8 +21,8 @@ jobs:
 
     - name: Deploy Docker container
       run: |
-        if [[ $(docker ps -a --format '{{.Names}}' | grep -w 'app3') ]]; then
+        if (docker ps -a --format '{{.Names}}' | Select-String -Pattern 'app3') {
           docker stop app3
           docker rm app3
-        fi
+        }
         docker run -d -p 5000:5000 --name app3 app3

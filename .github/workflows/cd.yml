@@ -7,7 +7,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: self-hosted  # Assure-toi d'avoir un runner auto-hébergé configuré en local ou sur une machine Linux ou Windows.
+    runs-on: self-hosted  
     
     steps:
     - name: Checkout code
@@ -17,7 +17,7 @@ jobs:
       uses: docker/setup-buildx-action@v1
 
     - name: Build Docker image
-      run: docker build -t app3 .  # Assurez-vous de spécifier le bon nom d'image
+      run: docker build -t app3 .  
 
     - name: Deploy Docker container
       run: |

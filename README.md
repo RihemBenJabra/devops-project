@@ -32,7 +32,7 @@ docker run -p 5000:5000 myapp
 terraform init
 terraform apply
 
-Remarque
-Un runner GitHub auto-hébergé a été utilisé pour le déploiement local.
+# Remarque
+# Un runner GitHub auto-hébergé a été utilisé pour le déploiement local.
 
 

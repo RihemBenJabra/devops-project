@@ -1,7 +1,7 @@
 # devops-project
 # DevOps Project – Déploiement d’une Application Web avec CI/CD et Docker
 
-## 📌 Objectif
+##  Objectif
 Ce projet a pour objectif de :
 - Créer une application web simple avec Flask.
 - La conteneuriser avec Docker.
@@ -10,7 +10,7 @@ Ce projet a pour objectif de :
 
 ---
 
-## 🛠️ Technologies utilisées
+##  Technologies utilisées
 - **Python / Flask**
 - **Docker**
 - **Git / GitHub**
@@ -25,10 +25,12 @@ Lancer l'application
  python app.py
 
 # Avec Docker
+```bash
  docker build -t myapp .
  docker run -p 5000:5000 myapp
 
 # Avec Terraform
+```bash
   terraform init
   terraform apply
 

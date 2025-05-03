@@ -22,15 +22,15 @@ Ce projet a pour objectif de :
 
 Lancer l'application
 # En local (hors Docker)
-python app.py
+ python app.py
 
 # Avec Docker
-docker build -t myapp .
-docker run -p 5000:5000 myapp
+ docker build -t myapp .
+ docker run -p 5000:5000 myapp
 
 # Avec Terraform
-terraform init
-terraform apply
+  terraform init
+  terraform apply
 
 # Remarque
 # Un runner GitHub auto-hébergé a été utilisé pour le déploiement local.
